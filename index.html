@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        ตัวแปลชื่อไฟล์ฐานข้อมูลฆ้อง |
+        Gong Database Filename Interpreter
+    </title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<div class="wrap">
+
+    <!-- ========================= -->
+    <!-- Hero -->
+    <!-- ========================= -->
+
+    <div class="hero">
+
+        <svg class="ripple"
+             viewBox="0 0 220 220">
+
+            <circle cx="110"
+                    cy="110"
+                    r="30"
+                    stroke-width="1.6"/>
+
+            <circle cx="110"
+                    cy="110"
+                    r="55"
+                    stroke-width="1.2"
+                    opacity="0.8"/>
+
+            <circle cx="110"
+                    cy="110"
+                    r="82"
+                    stroke-width="0.9"
+                    opacity="0.55"/>
+
+            <circle cx="110"
+                    cy="110"
+                    r="108"
+                    stroke-width="0.7"
+                    opacity="0.35"/>
+
+        </svg>
+
+        <h1>
+
+            ตัวแปลชื่อไฟล์ฐานข้อมูลฆ้อง
+
+            <span class="en">
+                Gong Database Filename Interpreter
+            </span>
+
+        </h1>
+
+        <p class="subtitle">
+
+            วางชื่อไฟล์ตามขั้นของการตั้งชื่อ
+            แล้วระบบจะแยกความหมายแต่ละส่วนให้
+            พร้อมดึงรายละเอียดการทดลอง
+            และไมโครโฟนจากฐานข้อมูล
+
+            <span class="en">
+
+                Paste a filename that follows the naming convention and the tool will break down every segment, pulling matching experiment and microphone details from the database.
+
+            </span>
+
+        </p>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- Input -->
+    <!-- ========================= -->
+
+    <div class="panel">
+
+        <div class="input-row">
+
+            <input
+                    id="fn-input"
+                    type="text"
+                    placeholder="e.g. forged-mai01-n10-exp01-weighted-hnong-sens01_raw.txt">
+
+            <button id="fn-btn">
+
+                ตีความ
+
+                <span class="btn-en">
+                    Interpret
+                </span>
+
+            </button>
+
+        </div>
+
+        <div class="examples">
+
+            <button
+                    class="example-chip"
+                    data-fn="cast-mai02-n10_02-exp03-weighted-hnong-sens02_raw(2).txt">
+
+                cast-mai02-n10_02-exp03-weighted-hnong-sens02_raw(2).txt
+
+            </button>
+
+            <button
+                    class="example-chip"
+                    data-fn="forged-mai01-n10-exp01-weighted-hnong-sens01_raw.txt">
+
+                forged-mai01-n10-exp01-weighted-hnong-sens01_raw.txt
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- Output -->
+    <!-- ========================= -->
+
+    <div
+            class="panel"
+            id="fn-output">
+
+        <p class="empty-hint">
+
+            ผลลัพธ์การตีความจะแสดงที่นี่
+
+            <span class="en">
+
+                Your interpreted result will appear here
+
+            </span>
+
+        </p>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- Footer -->
+    <!-- ========================= -->
+
+    <footer>
+
+        ข้อมูลอ้างอิงจากไฟล์ Gong Naming Convention Metadata —
+        แก้ไขในโค้ดได้เมื่อมีรหัสใหม่เพิ่มเข้าตาราง
+
+        <br>
+
+        Reference data sourced from the Gong Naming Convention Metadata file —
+        edit the code when new codes are added to the tables.
+
+    </footer>
+
+</div>
+
+<!-- JavaScript -->
+
+<script src="data.js"></script>
+
+<script src="parser.js"></script>
+
+<script src="render.js"></script>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
