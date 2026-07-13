@@ -142,7 +142,7 @@ const EXP_DATA = {
     },
 
     exp03:{
-        date:"03/10/2026",
+        date:"03/04/2026",
         sampling:"100 kHz",
 
         batches:{
