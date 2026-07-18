@@ -107,7 +107,7 @@ function render(filename) {
    
     const satBox = satMatch
         ? `
-            <div class="note-box">
+            <div class="note-box gain">
 
                 ⚠️ ไฟล์นี้ (${satMatch}) มีการตัดพีคที่มีค่าเกินออก
                 เนื่องจากสัญญาณอิ่มตัว (saturate)
