@@ -78,7 +78,33 @@ function render(filename) {
     const parsed = parseFilename(filename);
 
     const satMatch = checkSaturationNote(filename);
+    
+    const gainInfo = checkGainMetadata(filename);
+    const gainBox = gainInfo
+        ? `
+           <div class="note-box">
 
+               🎚️ <strong>Recording Gain</strong><br>
+
+               Gain: <b>${gainInfo.gain}</b><br>
+
+               Overall System Sensitivity:
+               <b>${gainInfo.sensitivity}</b>
+
+               <br><br>
+
+               ${gainInfo.noteTh}
+
+               <span class="en">
+
+                   ${gainInfo.noteEn}
+
+               </span>
+
+           </div>
+       `
+       : "";
+   
     const satBox = satMatch
         ? `
             <div class="note-box">
@@ -205,6 +231,7 @@ function render(filename) {
     let html = "";
 
     html += satBox;
+    html += gainBox;
 
     html += `
 
@@ -310,6 +337,33 @@ function render(filename) {
         !!sensData
 
     );
+    if (gainInfo) {
+
+    html += row(
+
+        "Recording Gain",
+
+        "Recording Gain",
+
+        gainInfo.gain,
+
+        true
+
+    );
+
+    html += row(
+
+        "Overall System Sensitivity",
+
+        "Overall System Sensitivity",
+
+        gainInfo.sensitivity,
+
+        true
+
+    );
+
+}
 
     html += row(
 
@@ -573,22 +627,3 @@ function render(filename) {
 
 }
 
-
-/**
- * ตรวจสอบว่าไฟล์นี้มีการบันทึกด้วย Gain พิเศษหรือไม่
- */
-function checkGainMetadata(filename) {
-
-    if (!filename) {
-        return null;
-    }
-
-    const key = filename.trim().toLowerCase().replace(/\s+/g, "");
-
-    if (GAIN_METADATA.hasOwnProperty(key)) {
-        return GAIN_METADATA[key];
-    }
-
-    return null;
-
-}
