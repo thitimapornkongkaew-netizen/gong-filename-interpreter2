@@ -293,3 +293,62 @@ const SATURATION_NOTE_TEXT = {
 };
 
 
+// ==========================
+// Table 5
+// Recording Gain Metadata
+// ==========================
+
+const GAIN_METADATA = {
+
+    "cast-mai01-n10_01-exp04-weighted-hnong-sens02_raw.txt": {
+        gain: "40 dB",
+        sensitivity: "5.0 V/Pa",
+        noteTh: "บันทึกด้วยเครื่องขยายสัญญาณ (Preamplifier) ที่ Gain = 40 dB ทำให้ความไวรวมของระบบเท่ากับ 5.0 V/Pa",
+        noteEn: "Recorded with a microphone preamplifier at a gain of 40 dB, resulting in an overall system sensitivity of 5.0 V/Pa."
+    },
+
+    "cast-mai01-n13_01-exp04-weighted-hnong-sens02_raw.txt": {
+        gain: "40 dB",
+        sensitivity: "5.0 V/Pa",
+        noteTh: "บันทึกด้วยเครื่องขยายสัญญาณ (Preamplifier) ที่ Gain = 40 dB ทำให้ความไวรวมของระบบเท่ากับ 5.0 V/Pa",
+        noteEn: "Recorded with a microphone preamplifier at a gain of 40 dB, resulting in an overall system sensitivity of 5.0 V/Pa."
+    },
+
+    "cast-mai01-n10_01-exp04-weighted-hnad-sens02_raw(1).txt": {
+        gain: "40 dB",
+        sensitivity: "5.0 V/Pa",
+        noteTh: "บันทึกด้วยเครื่องขยายสัญญาณ (Preamplifier) ที่ Gain = 40 dB ทำให้ความไวรวมของระบบเท่ากับ 5.0 V/Pa",
+        noteEn: "Recorded with a microphone preamplifier at a gain of 40 dB, resulting in an overall system sensitivity of 5.0 V/Pa."
+    },
+
+    "cast-mai01-n10_01-exp04-weighted-hnad-sens02_raw(2).txt": {
+        gain: "40 dB",
+        sensitivity: "5.0 V/Pa",
+        noteTh: "บันทึกด้วยเครื่องขยายสัญญาณ (Preamplifier) ที่ Gain = 40 dB ทำให้ความไวรวมของระบบเท่ากับ 5.0 V/Pa",
+        noteEn: "Recorded with a microphone preamplifier at a gain of 40 dB, resulting in an overall system sensitivity of 5.0 V/Pa."
+    },
+
+    "cast-mai01-n13_01-exp04-weighted-hnad-sens02_raw(1).txt": {
+        gain: "40 dB",
+        sensitivity: "5.0 V/Pa",
+        noteTh: "บันทึกด้วยเครื่องขยายสัญญาณ (Preamplifier) ที่ Gain = 40 dB ทำให้ความไวรวมของระบบเท่ากับ 5.0 V/Pa",
+        noteEn: "Recorded with a microphone preamplifier at a gain of 40 dB, resulting in an overall system sensitivity of 5.0 V/Pa."
+    },
+
+    "cast-mai01-n13_01-exp04-weighted-sadao-sens02_raw.txt": {
+        gain: "40 dB",
+        sensitivity: "5.0 V/Pa",
+        noteTh: "บันทึกด้วยเครื่องขยายสัญญาณ (Preamplifier) ที่ Gain = 40 dB ทำให้ความไวรวมของระบบเท่ากับ 5.0 V/Pa",
+        noteEn: "Recorded with a microphone preamplifier at a gain of 40 dB, resulting in an overall system sensitivity of 5.0 V/Pa."
+    },
+
+    "cast-mai01-n10_01-exp04-weighted-sadao-sens02_raw.txt": {
+        gain: "40 dB",
+        sensitivity: "5.0 V/Pa",
+        noteTh: "บันทึกด้วยเครื่องขยายสัญญาณ (Preamplifier) ที่ Gain = 40 dB ทำให้ความไวรวมของระบบเท่ากับ 5.0 V/Pa",
+        noteEn: "Recorded with a microphone preamplifier at a gain of 40 dB, resulting in an overall system sensitivity of 5.0 V/Pa."
+    }
+
+};
+
+
