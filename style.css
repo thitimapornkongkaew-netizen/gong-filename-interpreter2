@@ -257,6 +257,25 @@ button:active{
     margin-top:28px;
 }
 
+.note-box{
+    color:var(--brass);
+    font-size:14px;
+    font-weight:500;
+    background:var(--brass-bg);
+    border:1px solid #E4C778;
+    border-radius:8px;
+    padding:14px 16px;
+    margin-bottom:16px;
+}
+
+.note-box .en{
+    display:block;
+    font-weight:400;
+    font-size:13px;
+    margin-top:4px;
+    opacity:.9;
+}
+
 .error-box{
     color:var(--rust);
     font-size:14px;
