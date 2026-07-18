@@ -34,6 +34,31 @@ function bilingual(codeObj, code) {
 
 
 /**
+ * ตรวจสอบว่าไฟล์นี้อยู่ในรายชื่อ "ตัดพีคออกเนื่องจากสัญญาณอิ่มตัว" หรือไม่
+ * เทียบแบบไม่สนตัวพิมพ์เล็ก-ใหญ่ และไม่สนช่องว่างเกิน
+ */
+function checkSaturationNote(filename) {
+
+    if (!filename) {
+
+        return null;
+
+    }
+
+    const key = filename.trim().toLowerCase().replace(/\s+/g, "");
+
+    if (SATURATION_NOTES.hasOwnProperty(key)) {
+
+        return SATURATION_NOTES[key];
+
+    }
+
+    return null;
+
+}
+
+
+/**
  * แยกหมายเลขฆ้อง
  */
 function parseGong(gong) {
