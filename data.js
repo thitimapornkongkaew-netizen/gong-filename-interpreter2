@@ -227,3 +227,69 @@ const SENS_DATA = {
 
 };
 
+
+// ==========================
+// Table 4
+// Saturation / Clipped-Peak Notes
+// ----------------------------------------------------------
+// รายชื่อไฟล์ที่ถูกตัดพีคออก เนื่องจากสัญญาณอิ่มตัว (saturate)
+// ทำให้เหลือพีคเพียงไม่กี่จุดจากการตัดค่าที่เกินออก
+// key = ชื่อไฟล์ (lowercase, ไม่มีช่องว่าง) ใช้สำหรับจับคู่แบบไม่สนตัวพิมพ์เล็ก-ใหญ่/ช่องว่างเกิน
+// value = ชื่อไฟล์ตามที่บันทึกไว้จริง (แสดงผลกลับให้ผู้ใช้)
+// ==========================
+
+const SATURATION_NOTES = {
+
+    "cast-mai01-n10_01-exp04-weighted-hnong-sens02_raw.txt": "cast-mai01-n10_01-exp04-weighted-hnong-sens02_raw.txt",
+
+    "cast-mai01-n13_01-exp04-weighted-hnong-sens02_raw.txt": "cast-mai01-n13_01-exp04-weighted-hnong-sens02_raw.txt",
+
+    "cast-mai01-n10_01-exp04-weighted-hand-sens02_raw(1).txt": "cast-mai01-n10_01-exp04-weighted-hand-sens02_raw(1).txt",
+
+    "cast-mai01-n10_01-exp04-weighted-hand-sens02_raw(2).txt": "cast-mai01-n10_01-exp04-weighted- hand-sens02_raw(2).txt",
+
+    "cast-mai01-n13_01-exp04-weighted-hand-sens02_raw(1).txt": "cast-mai01-n13_01-exp04-weighted- hand-sens02_raw(1).txt",
+
+    "cast-mai01-n10_01-exp04-weighted-sadao-sens02_raw.txt": "cast-mai01-n10_01-exp04-weighted-sadao-sens02_raw.txt",
+
+    "cast-mai01-n13_01-exp04-weighted-sadao-sens02_raw.txt": "cast-mai01-n13_01-exp04-weighted- sadao-sens02_raw.txt",
+
+    "cast-mai01-n10_02-exp04-weighted-hnong-sens02_raw(2).txt": "cast-mai01-n10_02-exp04-weighted-hnong-sens02_raw(2).txt",
+
+    "cast-mai01-n13_02-exp04-weighted-hnong-sens02_raw.txt": "cast-mai01-n13_02-exp04-weighted-hnong-sens02_raw.txt",
+
+    "cast-mai01-n13_02-exp04-weighted-hand-sens02_raw.txt": "cast-mai01-n13_02-exp04-weighted-hand-sens02_raw.txt",
+
+    "cast-mai01-n13_02-exp04-unweighted-hnong-sens02_raw.txt": "cast-mai01-n13_02-exp04-unweighted-hnong-sens02_raw.txt",
+
+    "cast-mai01-n13_02-exp04-unweighted-hand-sens02_raw.txt": "cast-mai01-n13_02-exp04-unweighted-hand-sens02_raw.txt",
+
+    "cast-mai01-n13_02-exp04-unweighted-sadao-sens02_raw.txt": "cast-mai01-n13_02-exp04-unweighted-sadao-sens02_raw.txt",
+
+    "forged-mai01-n13_01-exp04-weighted-sadao-sens02_raw.txt": "forged-mai01-n13_01-exp04-weighted-sadao-sens02_raw.txt",
+
+    "forged-mai01-n10_01-exp04-unweighted-sadao-sens02_raw.txt": "forged-mai01-n10_01-exp04-unweighted-sadao-sens02_raw.txt",
+
+    "forged-mai01-n13_02-exp04-weighted-hnong-sens02_raw.txt": "forged-mai01-n13_02-exp04-weighted-hnong-sens02_raw.txt",
+
+    "forged-mai01-n13_02-exp04-weighted-hnad-sens02_raw.txt": "forged-mai01-n13_02-exp04-weighted-hnad -sens02_raw.txt",
+
+    "forged-mai01-n10_02-exp04-unweighted-sadao-sens02_raw.txt": "forged-mai01-n10_02-exp04-unweighted-sadao-sens02_raw.txt",
+
+    "forged-mai01-n13_02-exp04-unweighted-sadao-sens02_raw.txt": "forged-mai01-n13_02-exp04-unweighted-sadao-sens02_raw.txt",
+
+    "ideal-mai01-n10-exp04-unweighted-hnong-sens02_raw.txt": "ideal-mai01-n10-exp04-unweighted-hnong-sens02_raw.txt",
+
+    "ideal-mai01-n10-exp04-unweighted-hnad-sens02_raw.txt": "ideal-mai01-n10-exp04-unweighted-hnad-sens02_raw.txt"
+
+};
+
+const SATURATION_NOTE_TEXT = {
+
+    th: "ไฟล์นี้มีการตัดพีค (peak) ที่มีค่าเกินออก เนื่องจากสัญญาณอิ่มตัว (saturate) จึงเหลือพีคอยู่เพียงไม่กี่จุดในไฟล์ผลลัพธ์",
+
+    en: "Peaks exceeding the valid range were removed from this file due to signal saturation (clipping), so only a small number of peaks remain in the result."
+
+};
+
+
