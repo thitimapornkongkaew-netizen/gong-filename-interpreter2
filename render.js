@@ -572,3 +572,23 @@ function render(filename) {
     out.innerHTML = html;
 
 }
+
+
+/**
+ * ตรวจสอบว่าไฟล์นี้มีการบันทึกด้วย Gain พิเศษหรือไม่
+ */
+function checkGainMetadata(filename) {
+
+    if (!filename) {
+        return null;
+    }
+
+    const key = filename.trim().toLowerCase().replace(/\s+/g, "");
+
+    if (GAIN_METADATA.hasOwnProperty(key)) {
+        return GAIN_METADATA[key];
+    }
+
+    return null;
+
+}
