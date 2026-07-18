@@ -373,3 +373,27 @@ footer{
     }
 
 }
+
+/* =====================================
+   Recording Gain
+===================================== */
+
+.note-box.gain{
+
+    background:#EAF6EE;
+    border:1px solid #8BC39D;
+    color:#1E5E38;
+
+}
+
+.note-box.gain .en{
+
+    color:#356B49;
+
+}
+
+.note-box.gain strong{
+
+    color:#15552F;
+
+}
