@@ -244,11 +244,11 @@ const SATURATION_NOTES = {
 
     "cast-mai01-n13_01-exp04-weighted-hnong-sens02_raw.txt": "cast-mai01-n13_01-exp04-weighted-hnong-sens02_raw.txt",
 
-    "cast-mai01-n10_01-exp04-weighted-hand-sens02_raw(1).txt": "cast-mai01-n10_01-exp04-weighted-hand-sens02_raw(1).txt",
+    "cast-mai01-n10_01-exp04-weighted-hnad-sens02_raw(1).txt": "cast-mai01-n10_01-exp04-weighted-hnad-sens02_raw(1).txt",
 
-    "cast-mai01-n10_01-exp04-weighted-hand-sens02_raw(2).txt": "cast-mai01-n10_01-exp04-weighted- hand-sens02_raw(2).txt",
+    "cast-mai01-n10_01-exp04-weighted-hnad-sens02_raw(2).txt": "cast-mai01-n10_01-exp04-weighted-hnad-sens02_raw(2).txt",
 
-    "cast-mai01-n13_01-exp04-weighted-hand-sens02_raw(1).txt": "cast-mai01-n13_01-exp04-weighted- hand-sens02_raw(1).txt",
+    "cast-mai01-n13_01-exp04-weighted-hnad-sens02_raw(1).txt": "cast-mai01-n13_01-exp04-weighted-hnad-sens02_raw(1).txt",
 
     "cast-mai01-n10_01-exp04-weighted-sadao-sens02_raw.txt": "cast-mai01-n10_01-exp04-weighted-sadao-sens02_raw.txt",
 
@@ -258,11 +258,11 @@ const SATURATION_NOTES = {
 
     "cast-mai01-n13_02-exp04-weighted-hnong-sens02_raw.txt": "cast-mai01-n13_02-exp04-weighted-hnong-sens02_raw.txt",
 
-    "cast-mai01-n13_02-exp04-weighted-hand-sens02_raw.txt": "cast-mai01-n13_02-exp04-weighted-hand-sens02_raw.txt",
+    "cast-mai01-n13_02-exp04-weighted-hnad-sens02_raw.txt": "cast-mai01-n13_02-exp04-weighted-hnad-sens02_raw.txt",
 
     "cast-mai01-n13_02-exp04-unweighted-hnong-sens02_raw.txt": "cast-mai01-n13_02-exp04-unweighted-hnong-sens02_raw.txt",
 
-    "cast-mai01-n13_02-exp04-unweighted-hand-sens02_raw.txt": "cast-mai01-n13_02-exp04-unweighted-hand-sens02_raw.txt",
+    "cast-mai01-n13_02-exp04-unweighted-hnad-sens02_raw.txt": "cast-mai01-n13_02-exp04-unweighted-hnad-sens02_raw.txt",
 
     "cast-mai01-n13_02-exp04-unweighted-sadao-sens02_raw.txt": "cast-mai01-n13_02-exp04-unweighted-sadao-sens02_raw.txt",
 
