@@ -77,9 +77,34 @@ function render(filename) {
 
     const parsed = parseFilename(filename);
 
+    const satMatch = checkSaturationNote(filename);
+
+    const satBox = satMatch
+        ? `
+            <div class="note-box">
+
+                ⚠️ ไฟล์นี้ (${satMatch}) มีการตัดพีคที่มีค่าเกินออก
+                เนื่องจากสัญญาณอิ่มตัว (saturate)
+                จึงเหลือพีคอยู่เพียงไม่กี่จุดในไฟล์ผลลัพธ์
+
+                <span class="en">
+
+                    This file (${satMatch}) had peaks exceeding
+                    the valid range removed due to signal saturation
+                    (clipping) — only a small number of peaks remain
+                    in the result.
+
+                </span>
+
+            </div>
+        `
+        : "";
+
     if (!parsed) {
 
         out.innerHTML = `
+            ${satBox}
+
             <div class="error-box">
 
                 รูปแบบชื่อไฟล์นี้ไม่ตรงกับธรรมเนียมการตั้งชื่อ
@@ -178,6 +203,8 @@ function render(filename) {
     ];
 
     let html = "";
+
+    html += satBox;
 
     html += `
 
